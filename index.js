@@ -25,7 +25,7 @@ app.get("/api/shorts", async (req, res) => {
   let pageToken = ""; // Empty initially
 
   try {
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 1; i++) {
       // Fetch twice (50+50) to get 100 shorts
       const response = await axios.get(baseUrl, {
         params: {
@@ -34,7 +34,7 @@ app.get("/api/shorts", async (req, res) => {
           type: "video",
           videoDuration: "short",
           key: apiKey,
-          maxResults: 50, // Maximum allowed per call
+          maxResults: 10, // Maximum allowed per call
           pageToken: pageToken,
         },
       });
