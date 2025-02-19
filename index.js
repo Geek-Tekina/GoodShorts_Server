@@ -34,7 +34,7 @@ app.get("/api/shorts", async (req, res) => {
           type: "video",
           videoDuration: "short",
           key: apiKey,
-          maxResults: 10, // Maximum allowed per call
+          maxResults: 20, // Maximum allowed per call
           pageToken: pageToken,
         },
       });
