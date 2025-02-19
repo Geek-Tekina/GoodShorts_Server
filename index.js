@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "https://goodshorts.netlify.app/", // Allow only your frontend
+    origin: "https://goodshorts.netlify.app", // Allow only your frontend
     methods: "GET,POST,PUT,DELETE,PATCH", // Allowed methods
     credentials: true, // If using cookies or authentication
   })
